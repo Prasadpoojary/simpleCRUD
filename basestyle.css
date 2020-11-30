@@ -169,5 +169,16 @@
         border-top: 2.5px solid #24005e;
         cursor: pointer;
     }
+    .header li{
+    width:75px;
+    text-align: center;
+    height:25.5px;
+    padding-top:6px;
+    font-size: 12px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0px 0px 18px 1px #ecebf8;
+    transition: .5s ease-in-out;
+}
 
 }
