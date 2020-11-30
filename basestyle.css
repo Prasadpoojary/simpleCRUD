@@ -153,3 +153,21 @@
    border-radius: 50%;
    border:none;
 }
+
+@media screen and (max-width:760px)
+{
+    .search button{
+        padding:6px 15px;
+        outline:none;
+        margin-left: -6px;
+        border:3px solid #24005e;
+        background: #24005e;
+        color:#fff;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 0px 25px 25px 0px;
+        border-top: 2px solid #24005e;
+        cursor: pointer;
+    }
+
+}
