@@ -1,0 +1,81 @@
+
+<!-- PLEASE READ : Use this Page as Layout for all the Page with the help of your backend tech -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>simpleCRUD</title>
+    <link rel="stylesheet" href="basestyle.css">
+</head>
+<body>
+    <!-- header and navigation bar -->
+    <div class='header'>
+        <h1>simple<span>CRUD</span> </h1>
+        <nav>
+            <ul>
+                <a href="home.html"><li>Home</li></a>
+                <a href="create.html"><li>Create</li></a>
+                <a href="dashboard.html"><li>Dashboard</li></a>
+                <a href="signup.html"><li>Sign Up</li></a>
+            </ul>
+        </nav>
+
+        <!-- search bar -->
+        <div class="search">
+            <input type="search" name="" id="searchbar" placeholder="Search your data">
+            <a href="" id="searchlink"><button onclick="search();">GET</button></a>
+        </div>
+        <!-- search bar ends here -->
+    </div>
+    <!-- header ends here -->
+
+    <!-- message -->
+    <!-- if dont want this message you can you can delete this code MESSAGE.
+    BUT dont forget to delete the javascript code at the bottom of HTML -->
+    <div class="message-container" id="message-contID">
+        <div class="message">
+            <p id="msgtxt">Welcome Mr.Programmer</p>
+            <button onclick="closeMessage();">OK</button>
+        </div>
+    </div>
+    <!-- message ends here -->
+
+    <!-- insert sub body here -->
+
+       
+
+
+    <!-- sub body ends here -->
+
+    <!-- footer -->
+    <div class="footer">
+       <p>Designed for Practice</p>
+       <p class="tag">Value your TIME for now, <span>it never cheats like your EX</span></p>
+    </div>
+    <!-- footer ends here -->
+</body>
+<script>
+    // display and close the message
+    if(document.getElementById("msgtxt").innerText.length>0)
+    {
+        document.getElementById("message-contID").style.display="flex";
+    }
+    
+    function closeMessage()
+    {
+        document.getElementById("message-contID").style.display="none";
+        document.getElementById("msgtxt").innerText="";
+    }
+
+
+    // Search bar code
+    function search()
+    {
+        let query=document.getElementById("searchbar").value;
+        document.getElementById("searchlink").setAttribute("href",query); 
+    }
+</script>
+</html>
